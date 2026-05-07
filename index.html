@@ -8,22 +8,27 @@
 <body>
 
 <script>
-    //Example:
+    // Variables
     const name = "Javed";
     let age = 30;
-
     age = 31;
-
     console.log(name); // Javed
     console.log(age);  // 31
 
-    //Practice:
-    const city = "Karachi";
-    let temperature = 35;
+    // Arrow Function
+    const add = (a, b) => {
+        return a + b;
+    }
+    console.log("Addition: 5 + 5 = ", add(5,5));
 
-    temperature = 40;
+    // Short Hand Method
+    const sub = (a, b) => a - b;
+    console.log(`Subtraction: 10 - 4 = ${sub(10, 4)}`);
 
-    console.log(city, temperature);
+    // Multiply Short Hand
+    const multiply = (a, b) => a * b;
+    console.log(`Multiply: 3 * 3 = ${multiply(3,3)}`);
+
 </script>    
 </body>
 </html>
