@@ -44,6 +44,33 @@
         console.log(num * 2);
     });
 
+    // Filters
+
+    const ages = [20, 15, 18, 17, 26];
+
+    const filteredAges = ages.filter((age) => age >= 18);
+    filteredAges.map( (age) => console.log(age) );
+
+    //Objects
+    const std_users = [
+        {id: 1, name: "Javed", active:true},
+        {id: 2, name: "Ahsan", active:true},
+        {id: 3, name: "Kashif", active:false}
+    ];
+
+    //console.log(std_users);
+    // Separate usage of filter and map functions
+    // const activeUsers = std_users.filter( (user) => user.active);
+    // console.log(activeUsers);
+    // const userNames = activeUsers.map( (user) => user.name);
+    // console.log(userNames);
+
+    //Short Hand
+    const userNames = std_users
+    .filter( (user) => user.active)
+    .map( (user) => user.name);
+    console.log(userNames);
+
 </script>    
 </body>
 </html>
